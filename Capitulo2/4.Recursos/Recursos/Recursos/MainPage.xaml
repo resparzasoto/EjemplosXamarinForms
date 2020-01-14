@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Recursos.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="MiColor">Red</Color>
+            <Color x:Key="MiSegundoColor">Green</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <StackLayout.Resources>
+            <ResourceDictionary>
+                <Color x:Key="MiSegundoColor">Blue</Color>
+            </ResourceDictionary>
+        </StackLayout.Resources>
+        <Label Text="Aplicando mi color" 
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               TextColor="{StaticResource MiColor}" />
+        <Label Text="Aplicando mi segundo color" 
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               TextColor="{StaticResource MiSegundoColor}" />
+        <Label Text="Aplicando recursos globales"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               FontSize="{StaticResource TamañoLetra}" />
+    </StackLayout>
+</ContentPage>

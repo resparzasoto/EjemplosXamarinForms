@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Reto.MainPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Frame BorderColor="Black">
+            <BoxView Color="White"
+                     x:Name="box1" />
+        </Frame>
+        <Frame Grid.Column="1"
+               BorderColor="Black">
+            <BoxView Color="White"
+                     x:Name="box2" />
+        </Frame>
+        <Frame Grid.Column="2"
+               BorderColor="Black">
+            <BoxView Color="White"
+                     x:Name="box3" />
+        </Frame>
+        <Frame Grid.Row="1"
+               BorderColor="Black">
+            <BoxView Color="White"
+                     x:Name="box4" />
+        </Frame>
+        <Frame Grid.Row="1"
+               Grid.Column="1"
+               BorderColor="Black">
+            <BoxView Color="White"
+                     x:Name="box5" />
+        </Frame>
+        <Frame Grid.Row="1"
+               Grid.Column="2"
+               BorderColor="Black">
+            <BoxView Color="White"
+                     x:Name="box6" />
+        </Frame>
+        <Frame Grid.Row="2"
+               BorderColor="Black">
+            <BoxView Color="White"
+                     x:Name="box7" />
+        </Frame>
+        <Frame Grid.Row="2"
+               Grid.Column="1"
+               BorderColor="Black">
+            <BoxView Color="White"
+                     x:Name="box8" />
+        </Frame>
+        <Frame Grid.Row="2"
+               Grid.Column="2"
+               BorderColor="Black">
+            <BoxView Color="White"
+                     x:Name="box9" />
+        </Frame>
+    </Grid>
+</ContentPage>

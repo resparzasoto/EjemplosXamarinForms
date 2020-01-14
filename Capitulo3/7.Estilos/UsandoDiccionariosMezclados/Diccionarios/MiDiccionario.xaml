@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Diccionarios.MiDiccionario">
+    <Color x:Key="MiColor">Red</Color>
+    <Style x:Key="MiEstilo" TargetType="Entry">
+        <Style.Triggers>
+            <Trigger TargetType="Entry"
+                     Property="IsFocused"
+                     Value="True">
+                <Setter Property="TextColor"
+                        Value="{StaticResource MiColor}" />
+            </Trigger>
+        </Style.Triggers>
+        <Setter Property="Placeholder"
+                Value="Ingrese la información correspondiente" />
+        <Setter Property="PlaceholderColor"
+                Value="{StaticResource MiColor}" />
+    </Style>
+</ResourceDictionary>
